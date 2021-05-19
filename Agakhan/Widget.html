@@ -1,0 +1,665 @@
+<div>
+  <div data-dojo-attach-point="akah_container"></div>
+  <div data-dojo-attach-point="akah_tab_1">
+    <div id="akah_SummaryStyles">
+        <div class="akah_summary_content">
+          <div style="display:flex;padding-top: 12px;">
+            <div style="flex:1">
+                <span style="font-size: medium;line-height: 2em;font-family: sans-serif;">
+                  <b>State : </b>
+                </span>
+                <div data-dojo-attach-point="pro_state_id"></div>
+            </div>
+            <div style="flex:1">
+                <span style="font-size: medium;line-height: 2em;font-family: sans-serif;">
+                  <b>District : </b>
+                </span>
+                <div data-dojo-attach-point="pro_district_id"></div>
+            </div>
+            <div style="flex:1">
+                <span style="font-size: medium;line-height: 2em;font-family: sans-serif;">
+                  <b>Block: </b>
+                </span>
+                <div data-dojo-attach-point="pro_block_id"></div>
+            </div>
+            </div>
+            <div id="summary_gujarath" style="display:none;padding-top: 13px;">
+                <div style="font-size: medium;padding-top: 1%;line-height: 1.8em;">
+                  <div id="summary_location_info" style="display: block;">
+                    <span>
+                      <span class="akahHeadings">State: </span>
+                      <span class="akahNames" id="guj_state"></span>
+                    </span>&nbsp;&nbsp;
+                    <span>
+                      <span class="akahHeadings">District: </span>
+                      <span class="akahNames" id="guj_district"></span>
+                    </span>&nbsp;&nbsp;
+                    <span>
+                      <span class="akahHeadings">Block: </span>
+                      <span class="akahNames" id="guj_block"></span>
+                    </span>
+                  </div>
+
+                  <div style="font-size: small;line-height: 2em;display:flex;text-align:center;padding-top: 10px;">
+                      <div class="akah_wellRegistration" style="flex:1;padding-left: 15px;padding-right: 15px;">
+                          <div>
+                            <span id="sum_vilage_count" class="countall"><b></b></span><hr class="akah_hr">
+                          </div>
+                          <span style="font-size: 13px;">Village under Survey</span>
+                      </div>
+                      <div class="akah_wellRegistration" style="flex:1;padding-left: 15px;padding-right: 15px;">
+                          <div>
+                            <span id="sum_wellcount" class="countall"><b></b></span><hr class="akah_hr">
+                          </div>
+                          <span style="font-size: 13px;">Long-term Observation Wells</span>
+                      </div>
+                      <div class="akah_wellRegistration" style="flex:1;padding-left: 15px;padding-right: 15px;">
+                          <div style="padding-bottom:6px">
+                            <span id="sum_pop" class="countall"><b></b></span><hr class="akah_hr">
+                          </div>
+                          <span style="font-size: 13px;line-height: normal;">Total Population Benefited by Project</span>
+                      </div>
+                  </div>
+
+                  <div style="font-size: small;line-height: 2em;display:flex;text-align:center;padding-top:26px">
+                    <div style="font-size: small;line-height: 2em;text-align:center;flex:3">
+                      <div style="text-align: center;">
+                        <p style="font-weight: 600;font-size: 14px;">Water Levels (CGWB data):</p>
+                        </div>
+                        <div style="display:flex;margin-top: 8px;">
+                        <div class="akah_wellRegistration" style="flex:1;padding-left: 15px;padding-right: 9px;">
+                            <div>
+                              <span id="sum_premon" class="count_value"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 15px;">Pre Monsoon</span>
+                        </div>
+                        <div class="akah_wellRegistration" style="flex:1;padding-left: 9px;">
+                            <div>
+                              <span id="sum_postmon" class="count_value"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 15px;">Post Monsoon</span>
+                        </div>
+                        </div>
+                    </div>
+                      <div class="akah_wellRegistration" style="flex:1;padding-left: 15px;padding-right: 8px;padding-top:29px">
+                          <div>
+                            <span id="sum_aqui" class="count_value"><b></b></span><hr class="akah_hr">
+                          </div>
+                          <span style="font-size: 15px;">Aquifer</span>
+                      </div>
+                      <div class="akah_wellRegistration" style="flex:1;padding-left: 8px;padding-right: 17px;padding-top:29px;">
+                          <div>
+                            <span id="sum_ws" class="count_value"><b></b></span><hr class="akah_hr">
+                          </div>
+                          <span style="font-size: 15px;">Watershed</span>
+                      </div>
+                  </div>
+
+                  <div style="display:flex;width:auto;padding-top:29px;">
+                    <div class="akah_wellRegistration" style="flex:auto;padding-left: 90px;padding-right: 90px;">
+                      <div>
+                        <span id="sum_wq" class="count_value"><b></b></span><hr class="akah_hr">
+                      </div>
+                      <span style="font-size: 15px;">Water Quality (CGWB)</span>
+                  </div>
+                </div>
+
+                </div>
+                <!-- <div><b>Blocks covered:</b>
+                  <span id="guj_block_count" class="akah_stateCount" style="padding-left: 10px;"></span>
+                </div>
+                <div><b>Villages covered:</b>
+                  <span id="guj_vill_count" class="akah_stateCount" style="padding-left: 10px;"></span>
+                </div> -->
+            </div>
+        </div>
+        <div style="margin-top: 2%;">
+            <hr id="akahsummary_footer_hr">
+            <div class="jimu-btn akah_buttonStyle" style="margin:1% 0% 0% 40%;background-color: #313c3d;text-align: center;"
+               data-dojo-attach-event="onclick:gotoakahlocation">Next
+            </div>
+        </div>
+    </div>
+  </div>
+  <div data-dojo-attach-point="akah_tab_2">
+    <div id="akah_LocationStyles">
+        <div style="font-family: sans-serif;" class="akah_summary_content">
+            <h1 id="akah_locationStyle">Select Location</h1>
+            <div style="display:flex;">
+            <div id="state_dropdown" style="margin-top: 2%;font-size: 16px;flex:1">
+              <span style="margin-right: 29px;"><b>State: </b></span>
+              <div data-dojo-attach-point="locStateId"></div>
+            </div>
+            <div id="district_dropdown" style="margin-top: 2%;font-size: 16px;flex:1">
+              <span style="margin-right: 16px;"><b>District: </b></span>
+              <div data-dojo-attach-point="locDistId"></div>
+            </div>
+            </div>
+            <div style="display:flex">
+              <div id="block_dropdown" style="margin-top: 2%;font-size: 16px;flex:1">
+                <span style="margin-right: 25px;"><b>Block: </b></span>
+                <div data-dojo-attach-point="locBlockId"></div>
+              </div>
+              <div id="village_dropdown" style="margin-top: 2%;font-size: 16px;flex:1">
+                <span style="margin-right: 19px;"><b>Village: </b></span>
+                <div data-dojo-attach-point="locVillId"></div>
+              </div>
+            </div>
+            <div style="margin-top: 2%;width: 100%">
+              <div id="akahvillage_check_box" style="margin-top: 2%;">
+                <label for="akahvillage_check" style="font-size:16px;font-weight: bold;margin-top: 2%;">Show Village Boundaries &nbsp;&nbsp;</label>
+                <input id="akahvillage_check" />
+              </div>
+              <div style="display: inline-flex;margin-top: 10px;">
+                <button class="jimu-btn akah_buttonStyle" style="margin-top: 5px;background-color: #313c3d;"
+                     data-dojo-attach-event="onclick:showAKAHResult">Go</button>
+                <button class="jimu-btn akah_buttonStyle" style="margin-top: 5px;margin-left: 6%;width: 90px;background-color: #313c3d;"
+                     data-dojo-attach-event="onclick:resetAkah">Reset</button>
+                <button id="akahwellInventory_Report" class="jimu-btn akah_buttonStyle" data-dojo-attach-event="onclick:print_AKAHInventory_Report">
+                    Print Report</button>
+                    <img id="pr_load" src='' alt="Loading.." style="display:none">
+              </div>
+              <div id="village_level_info">
+                <div style="font-size: small;line-height: 2em;display:flex;text-align:center;padding-top: 10px;">
+                        <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;">
+                            <div>
+                              <span id="vs_well_count" class="countall1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 13px;">Observation Wells</span>
+                        </div>
+                        <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;">
+                        <div>
+                          <span id="vs_pre_mon" class="count_value1"><b></b></span><hr class="akah_hr">
+                        </div>
+                        <span style="font-size: 13px;line-height: 1rem;">Pre Monsoon Water Level</span>
+                        </div>
+                        <div class="akah_wellRegistration" style="flex:2;padding-left: 10px;padding-right: 10px;">
+                            <div style="padding-bottom:6px">
+                              <span id="vs_wq" class="countall1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <div style="display: inline-block;">
+                            <span style="font-size: 13px;line-height: normal;">Water Quality</span>
+                            <div class="tooltipWQ">
+                              <img src="https://geomonitor.co.in/images/info.jpg"  id="infobtn_WQ" style="width: 18px;height: 18px;vertical-align: middle;" data-dojo-attach-event="onclick:displayWQInfo">
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+
+<div style="font-size: small;line-height: 2em;display:flex;text-align:center;padding-top: 20px;">
+                        <div class="akah_wellRegistration" style="flex:2;padding-left: 10px;padding-right: 10px;">
+                            <div>
+                              <span id="vs_maj_crop" class="count_value1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 13px;">Major Crops</span>
+                        </div>
+                        <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;">
+                            <div>
+                              <span id="vs_sw_irr" class="count_value1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 13px;line-height: 1.2em;">Area Irrigated by Surface Water</span>
+                        </div>
+                        <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;display:none">
+                            <div>
+                              <span id="vs_gw_irr" class="count_value1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 13px;line-height: 1.2em;">Area Irrigated by Ground Water</span>
+                        </div>
+                    <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;display:none">
+                            <div>
+                              <span id="vs_avail_gw" class="count_value1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 13px;line-height: 1.2em;">Available Surface Water</span>
+                        </div>
+
+                      </div>
+
+
+
+                        <div style="font-size: small;line-height: 2em;display:flex;text-align:center;padding-top: 20px;">
+                        <div style="flex: 2;display: grid;display:none">
+                          <div style="font-weight: 600;padding-left: 6px;">Pre-Monsoon and Post-Monsoon Water Levels :</div>
+                          <div style="display: flex;">
+                            <!-- <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;">
+                            <div>
+                              <span id="vs_pre_mon" class="count_value1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 13px;">Pre Monsoon</span>
+                            </div> -->
+                            <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;">
+                            <div>
+                              <span id="vs_post_mon" class="count_value1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 13px;line-height: 1.2em;">Post Monsoon</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;">
+                                <div>
+                                  <span id="vs_pop" class="countall1"><b></b></span><hr class="akah_hr">
+                                </div>
+                                <span style="font-size: 13px;">Village Population</span>
+                            </div>
+                            <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;">
+                                <div style="padding-bottom:6px">
+                                  <span id="vs_pop_ratio" class="countall1"><b></b></span><hr class="akah_hr">
+                                </div>
+                                <span style="font-size: 13px;line-height: normal;">Sex Ratio</span>
+                            </div>
+                        <div class="akah_wellRegistration" style="flex:1;padding-left:10px;padding-right: 10px;">
+                            <div>
+                              <span id="vs_aqui" class="count_value1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 13px;line-height: 1.2em;">Aquifer</span>
+                        </div>
+                    <div class="akah_wellRegistration" style="flex:1;padding-left: 10px;padding-right: 10px;">
+                            <div>
+                              <span id="vs_ws" class="count_value1"><b></b></span><hr class="akah_hr">
+                            </div>
+                            <span style="font-size: 13px;line-height: 1.2em;">Watershed</span>
+                        </div></div>
+                        <div id="chartModule_new" style="display:none;width:600px;height:350px"><div id="mbgl_chart" class='graph_bg' style="width:600px;height:350px"></div></div>
+                        <div id="barchartModule_new" style="display:none;width:600px;height:350px"><div id="gw_bar_chart" style="width:600px;height:250px"></div></div>
+                        <div id="pieChartareaIrrig" style="display:none;width:600px;height:600px">
+                          <div id="areaIrrig" style="width:400px;height:400px"></div>
+                        </div>
+                        <div id="village_pieChartareaIrrig" style="display:none;width:600px;height:600px">
+                          <div id="village_areaIrrig" style="width:400px;height:350px"></div>
+                        </div>
+                        <div id="pieBlockarea" style="display:none;width:480px;height:350px"><div id="blockarea" style="width:295px;height:295px"></div></div>
+                        <div id="line_rainfall_chart" style="display:none;width:600px;height:350px"><div id="rainfall_chart" style="width:600px;height:250px"></div></div>
+                        <div id="wl_rainfall_chart" style="width: 700px;height: 250px;display: none;">
+                          <div id="column_lineChart" style="width: 700px;height: 250px;"></div>
+                        </div>
+                        <!-- <div style="display: none; padding-left: 80px;" id="rf_wl_legend">
+      <div style="display:inline-flex;">
+      <div style="width:17px;height:16px;border:1.6px solid white;background-color:#55aafa;border-radius: 4px;"></div>
+      <span style="padding-left:5px;">Pre-monsoon WL CGWB</span></div>
+
+      <div style="display:inline-flex;padding-left:10px;">
+      <div style="width:17px;height:16px;border:1.6px solid white;background-color: #ad7b2a;border-radius: 4px;"></div>
+      <span style="padding-left:5px;">Post-monsoon WL CGWB</span></div>
+
+      <div style="display:inline-flex;padding-left:10px;">
+      <div style="width:17px;height:16px;border:1.6px solid white;background-color:#008cba;border-radius: 4px;"></div>
+      <span style="padding-left:5px;">Annual Rainfall</span></div>
+
+      </div>
+      <div style="display: none; padding-left: 120px;" id="rf_wl1_legend">
+<div style="display:inline-flex;">
+<div style="width:17px;height:16px;border:1.6px solid white;background-color:#254868;border-radius: 4px;"></div>
+<span style="padding-left:5px;">Pre-monsoon WL Trend Line</span></div>
+
+<div style="display:inline-flex;padding-left:10px;">
+<div style="width:17px;height:16px;border:1.6px solid white;background-color: #684a1a;border-radius: 4px;"></div>
+<span style="padding-left:5px;">Post-monsoon WL Trend Line</span></div>
+</div> -->
+
+              </div>
+            </div>
+
+        </div>
+        <div>
+            <hr id="akahlocation_footer_hr">
+            <div class="jimu-btn akah_buttonStyle" style="margin-top: 5px;margin-left: 35%;background-color: #313c3d;"
+                 data-dojo-attach-event="onclick:gotosummary">Previous</div>
+            <div class="jimu-btn akah_buttonStyle" style="margin-top: 5px;margin-left: 2%;background-color: #313c3d;"
+                 data-dojo-attach-event="onclick:gotoakahAnalytics">Next</div>
+        </div>
+    </div>
+  </div>
+  <div data-dojo-attach-point="akah_tab_3">
+    <div id="akah_chartTabStyles" style="height:calc(100% - 30px)">
+      <div class="akah_chart_content" style="display: inline-grid;">
+          <div style="display: inline-flex;margin-left: 10px;">
+              <div>
+                <div class="akah_search"><b>Select Location:</b></div><div id="searchVillageAKAH" style="margin-top: 5%;"></div>
+                <div style="display: flex;padding-top: 15px;">
+                  <span style="padding-top: 4%;font-size: 16px;color: #485566;margin-right: 2.8%;"> OR </span>
+                  <button id="point" class="tool_akah akah_buttonStyle"  data-dojo-type="dijit/form/Button"
+                      style="width: 35px;height: 33px;font-size: 15px;border: 1px solid #485566;border-radius: 4px;"></button>
+                  <button type="button" class="jimu-btn akah_buttonStyle" id="akahClearGraphics_locationtab" style="width: 150px;">
+                      Clear Graphics</button>
+                </div>
+              </div>
+              <div class="akah_seperatorVL"></div>
+              <div>
+                <div style="line-height: 1.8em;font-size: 16px;font-weight: 600;">Select Timeperiod for Analysis:
+                </div>
+                <ul style="list-style-type: none; padding: 0px;display: flex;">
+                  <li style="padding-right: 50px;">
+                    <input id="lulc_inp" name="analysisType" type="radio" value="LULC" disabled="false" checked
+                      data-dojo-type="dijit/form/RadioButton">
+                    <label id="lulc_label" class="label_e" style="font-size: 13px;font-weight: bold;">LULC</label>
+                  </li>
+                  <li style="padding-right: 50px;">
+                    <input id="ndwi_inp" name="analysisType" type="radio" value="NDWI" disabled="true"
+                      data-dojo-type="dijit/form/RadioButton">
+                    <label id="ndwi_label" class="label_e" style="font-size: 13px;font-weight: bold;">NDWI</label>
+                  </li>
+                  <li >
+                    <input id="ndvi_inp" name="analysisType" type="radio" value="NDVI" disabled="true"
+                      data-dojo-type="dijit/form/RadioButton">
+                    <label id="ndvi_label" class="label_e" style="font-size: 13px;font-weight: bold;">NDVI</label>
+                  </li>
+                 
+              </ul>
+                <div style="display: inline-flex;font-size: larger;line-height: 2em;" class="LULCCategory">
+                  <div style="display: inline-grid;">
+                    <span><b>Monsoon</b></span><div data-dojo-attach-point='akah_selMonsoon'></div>
+                  </div>
+                  <div style="display: inline-grid;margin-left: 84px">
+                    <span><b>Year</b></span><div data-dojo-attach-point='akah_selYear'></div>
+                  </div>
+                </div>
+                <div style="display: inline-flex;font-size: larger;line-height: 2em;display: none;" class="NDWICategory">
+                  <span><b>From</b></span>
+                  <span style="padding-left: 50%;"><b>To</b></span>
+                  <div>
+                   <div data-dojo-attach-point='akah_fromselMonthNDWI'></div>
+                   <div data-dojo-attach-point='akah_fromselYearNDWI'></div>
+                   <div data-dojo-attach-point='akah_toselMonthNDWI'></div>
+                   <div data-dojo-attach-point='akah_toselYearNDWI'></div>
+                  </div>
+                </div>
+                <div style="display: inline-flex;font-size: larger;line-height: 2em;display: none;" class="NDVICategory">
+                  <span><b>From</b></span>
+                  <span style="padding-left: 50%;"><b>To</b></span>
+                  <div>
+                   <div data-dojo-attach-point='akah_fromselMonthNDVI'></div>
+                   <div data-dojo-attach-point='akah_fromselYearNDVI'></div>
+                   <div data-dojo-attach-point='akah_toselMonthNDVI'></div>
+                   <div data-dojo-attach-point='akah_toselYearNDVI'></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div id="akahLocation_info" style="display: none;"></div>
+          <div style="text-align: center;">
+            <div id="akah_chartModule" style="display: inline-flex;">
+              <div style="display: inline-flex;">
+                <div id="akahLulc_Chart"></div>
+                <div id="lulc_legend" style="text-align:initial"></div>
+              </div>
+              <div id="villageLULC" style="display: none;">
+                <div id="Village_akahLulc_Chart"></div>
+                <div id="Village_lulc_legend"></div>
+              </div>
+              <div id="blockLULC" style="display: none;">
+                <div id="block_akahLulc_Chart"></div>
+                <div id="block_lulc_legend"></div>
+              </div>
+<!--               <div>
+                <div id="akahNdvi_Chart"></div>
+                <div id="ndvi_legend"></div>
+              </div> -->
+            </div>
+            <div id="akah_ndwiChartModule" >
+              <div style="display: inline-flex;">
+                <div id="ndwiLineCharts_info"></div>
+                <div id="ndwi_legend"></div>
+              </div>
+                <table id="ndwi_checkboxtable" style="display: none;">
+                  <tr>
+                    <td style="font-size: 14px;padding: 5px 12px;"><span><input id="maxCheckBox_ndwi"/> <label for="maxCheckBox_ndwi"><b class="sublabels"> Maximum</b></label>
+                      <div class="tooltipCB">
+                        <img src="https://geomonitor.co.in/images/info.jpg"  id="infobtn_maxCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" data-dojo-attach-event="onclick:displayWQInfo">
+                        <span class="tooltiptextCB">Minimum is the highest amount or quantity possible, attainable, or required.</span>
+                      </div>
+                    </span></td>
+                    <td style="font-size: 14px;padding: 5px 12px;"><span><input id="meanCheckBox_ndwi"/> <label for="meanCheckBox_ndwi"><b class="sublabels"> Mean</b></label>
+                      <div class="tooltipCB">
+                        <img src="https://geomonitor.co.in/images/info.jpg"  id="infobtn_meanCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" data-dojo-attach-event="onclick:displayWQInfo">
+                        <span class="tooltiptextCB">Mean is an arithmetic average of the data set and it can be calculated by dividing a sum of all the data points with the number of data points in the data set. It is a point in a data set that is the average of all the data points we have in a set.</span>
+                      </div>
+                    </span></td>
+                    <td style="font-size: 14px;padding: 5px 12px;"><span><input id="minCheckBox_ndwi"/> <label for="minCheckBox_ndwi"><b class="sublabels"> Minimum</b></label>
+                      <div class="tooltipCB">
+                        <img src="https://geomonitor.co.in/images/info.jpg"  id="infobtn_minCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" data-dojo-attach-event="onclick:displayWQInfo">
+                        <span class="tooltiptextCB">Minimum is the least or smallest quantity possible, attainable, or required.</span>
+                      </div>
+                    </span></td>
+                    <td style="font-size: 14px;padding: 5px 12px;"><span><input id="standardCheckBox_ndwi"/> <label for="standardCheckBox_ndwi"><b class="sublabels"> Standard deviation</b></label>
+                      <div class="tooltipCB">
+                        <img src="https://geomonitor.co.in/images/info.jpg"  id="infobtn_standardCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" data-dojo-attach-event="onclick:displayWQInfo">
+                        <span class="tooltiptextCB">A standard deviation is a statistic that measures the dispersion of a dataset relative to its mean. The standard deviation is calculated as the square root of variance by determining each data point's deviation relative to the mean.</span>
+                      </div>
+                    </span></td>
+                  </tr>
+                </table>
+            </div>
+            <div id="akah_ndviChartModule" >
+              <div style="display: inline-flex;">
+                <div id="ndviLineCharts_info"></div>
+                <div id="ndvi_legend"></div>
+              </div>
+                <table id="ndvi_checkboxtable" style="display: none;">
+                  <tr>
+                    <td style="font-size: 14px;padding: 5px 12px;"><span><input id="maxCheckBox_ndvi"/> <label for="maxCheckBox_ndvi"><b class="sublabels"> Maximum</b></label>
+                      <div class="tooltipCB">
+                        <img src="https://geomonitor.co.in/images/info.jpg"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;" data-dojo-attach-event="onclick:displayWQInfo">
+                        <span class="tooltiptextCB">Minimum is the highest amount or quantity possible, attainable, or required.</span>
+                      </div>
+                    </span></td>
+                    <td style="font-size: 14px;padding: 5px 12px;"><span><input id="meanCheckBox_ndvi"/> <label for="meanCheckBox_ndvi"><b class="sublabels"> Mean</b></label>
+                      <div class="tooltipCB">
+                        <img src="https://geomonitor.co.in/images/info.jpg"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;" data-dojo-attach-event="onclick:displayWQInfo">
+                        <span class="tooltiptextCB">Mean is an arithmetic average of the data set and it can be calculated by dividing a sum of all the data points with the number of data points in the data set. It is a point in a data set that is the average of all the data points we have in a set.</span>
+                      </div>
+                    </span></td>
+                    <td style="font-size: 14px;padding: 5px 12px;"><span><input id="minCheckBox_ndvi"/> <label for="minCheckBox_ndvi"><b class="sublabels"> Minimum</b></label>
+                      <div class="tooltipCB">
+                        <img src="https://geomonitor.co.in/images/info.jpg"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;" data-dojo-attach-event="onclick:displayWQInfo">
+                        <span class="tooltiptextCB">Minimum is the least or smallest quantity possible, attainable, or required.</span>
+                      </div>
+                    </span></td>
+                    <td style="font-size: 14px;padding: 5px 12px;"><span><input id="standardCheckBox_ndvi"/> <label for="standardCheckBox_ndvi"><b class="sublabels"> Standard deviation</b></label>
+                      <div class="tooltipCB">
+                        <img src="https://geomonitor.co.in/images/info.jpg"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;" data-dojo-attach-event="onclick:displayWQInfo">
+                        <span class="tooltiptextCB">A standard deviation is a statistic that measures the dispersion of a dataset relative to its mean. The standard deviation is calculated as the square root of variance by determining each data point's deviation relative to the mean.</span>
+                      </div>
+                    </span></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+      </div>
+      <div>
+          <hr id="akahchart_footer_hr">
+          <div style="display: inline-flex;">
+              <div class="jimu-btn akah_buttonStyle"
+                    style="margin-top: 6px;margin-left: 250px;background-color: #313c3d;text-align: center;"
+                   data-dojo-attach-event="onclick:gotoakahlocation">Previous
+              </div>
+              <div class="jimu-btn akah_buttonStyle"
+                    style="margin-top: 6px;margin-left: 10px;background-color: #313c3d;text-align: center;"
+                   data-dojo-attach-event="onclick:gotoakahVisualization">Next
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div data-dojo-attach-point="akah_tab_4">
+    <div style="display:flex;padding-top: 12px;padding-bottom: 13px;">
+      <div style="flex:1">
+          <span style="font-size: medium;line-height: 2em;font-family: sans-serif;">
+            <b>State : </b>
+          </span>
+          <div data-dojo-attach-point="dv_state_id"></div>
+      </div>
+      <div style="flex:1">
+          <span style="font-size: medium;line-height: 2em;font-family: sans-serif;">
+            <b>District : </b>
+          </span>
+          <div data-dojo-attach-point="dv_district_id"></div>
+      </div>
+      <div style="flex:1">
+          <span style="font-size: medium;line-height: 2em;font-family: sans-serif;">
+            <b>Block: </b>
+          </span>
+          <div data-dojo-attach-point="dv_block_id"></div>
+      </div>
+      </div>
+      <div id="dv_info" style="display: none;">
+        <span>
+          <span class="akahHeadings">State: </span>
+          <span class="akahNames" id="dv_state"></span>
+        </span>&nbsp;&nbsp;
+        <span>
+          <span class="akahHeadings">District: </span>
+          <span class="akahNames" id="dv_district"></span>
+        </span>&nbsp;&nbsp;
+        <span>
+          <span class="akahHeadings">Block: </span>
+          <span class="akahNames" id="dv_block"></span>
+        </span>
+      </div>
+      <div data-dojo-attach-point="akah_dv_info_container" style="height:calc(100% - 30px)">
+      </div>
+      <div data-dojo-attach-point="akah_rainfall_info">
+        <div style="padding-top: 15px;padding-left: 10px;padding-right: 10px;"><div id="rainfall_graph"> </div></div>
+
+        <div style='display:inline-flex;display:none;padding-left: 80px;' id="rainfall_legend">
+        <div style='display:inline-flex;'>
+        <div style='width:17px;height:16px;border:1.6px solid white;background-color:#613e04;border-radius: 4px;'></div>
+        <span style='padding-left:5px;'>Normal Rainfall</span></div>
+
+        <div style='display:inline-flex;padding-left:10px;'>
+        <div style='width:17px;height:16px;border:1.6px solid white;background-color:#2a6ead;border-radius: 4px'></div>
+        <span style='padding-left:5px;'>Actual Rainfall</span></div>
+
+        <!-- <div style='display:inline-flex;padding-left:10px;'>
+        <div style='width:17px;height:16px;border:1.6px solid white;background-color:#0e3961;border-radius: 4px'></div>
+        <span style='padding-left:5px;'>Deviation</span></div> -->
+
+        </div>
+
+      </div>
+      <div data-dojo-attach-point="akah_gwr_info">
+        <div id="gwr_info" style="display: none;">
+          <span>
+            <span class="akahHeadings">Category: </span>
+            <span class="akahNames" id="gwr_category"></span>
+          </span>&nbsp;&nbsp;
+          <span>
+            <span class="akahHeadings">Stage: </span>
+            <span class="akahNames" id="gwr_stage"></span>
+          </span>&nbsp;&nbsp;
+          <!-- <span>
+            <span class="akahHeadings">Block: </span>
+            <span class="akahNames" id="dv_block"></span>
+          </span> -->
+        </div>
+
+
+
+
+<!-- stacked -->
+<div>
+  <div id="barAndStackedBarChartDiv"> </div>
+</div>
+<div style='display:inline-flex;padding-left:80px;padding-top:7px;display:none' id="barAndStackedBarChartDivlegend">
+          <div style='display:inline-flex;'>
+          <div style='width:17px;height:16px;border:1.6px solid white;background-color:blue;border-radius: 4px;'></div>
+          <span style='padding-left:5px;'>Net GW Availability</span></div>
+          <div style='display:inline-flex;padding-left:10px;'>
+          <div style='width:17px;height:16px;border:1.6px solid white;background-color:orange;border-radius: 4px'></div>
+          <span style='padding-left:5px;'>Domestic Draft</span></div>
+          <div style='display:inline-flex;padding-left:10px;'>
+            <div style='width:17px;height:16px;border:1.6px solid white;background-color:green;border-radius: 4px'></div>
+            <span style='padding-left:5px;'>Irrigation Draft</span></div>
+          <div style='display:inline-flex;padding-left:10px;'>
+            <div style='width:17px;height:16px;border:1.6px solid white;background-color:#A93226;border-radius: 4px'></div>
+            <span style='padding-left:5px;'>GW for future use</span></div>
+          <!-- <div style='display:inline-flex;'>
+            <div style='width:17px;height:16px;border:1.6px solid white;background-color:yellow;border-radius: 4px'></div>
+            <span style='padding-left:5px;'>GW Allocation</span></div> -->
+</div>
+<!-- end of stacked -->
+
+
+
+        <div style="display: none;">
+          <div id="gwr_graph1"> </div>
+        </div>
+        <div style='display:inline-flex;padding-left:80px;padding-top:7px;display:none' id="gwr_graph1_legend">
+
+        <div style='display:inline-flex;display: none;'>
+        <div style='width:17px;height:16px;border:1.6px solid white;background-color:blue;border-radius: 4px;'></div>
+        <span style='padding-left:5px;'>Net GW Availability (2025)</span></div>
+
+        <div style='display:inline-flex;padding-left:10px;'>
+        <div style='width:17px;height:16px;border:1.6px solid white;background-color:blue;border-radius: 4px'></div>
+        <span style='padding-left:5px;'>Total Extraction</span></div>
+
+        <div style='display:inline-flex;padding-left:10px;'>
+        <div style='width:17px;height:16px;border:1.6px solid white;background-color:orange;border-radius: 4px;'></div>
+        <span style='padding-left:5px;'>Domestic Draft</span></div>
+
+        <div style='display:inline-flex;padding-left:10px;'>
+        <div style='width:17px;height:16px;border:1.6px solid white;background-color:orange;border-radius: 4px;'></div>
+        <span style='padding-left:5px;'>Irrigation Draft</span></div>
+
+        </div>
+        <p id="gwr_graph2_heading" style="font-size: 18px;text-align: center;padding-top: 20px;display:none"><b>Projected Groundwater Resources (for year 2025)</b></p>
+        <div>
+          <div id="gwr_graph2"> </div>
+        </div>
+        <div style='display:inline-flex;padding-left:80px;padding-top:7px;display:none' id="gwr_graph2_legend">
+              <div style='display:inline-flex;'>
+              <div style='width:17px;height:16px;border:1.6px solid white;background-color:green;border-radius: 4px;'></div>
+              <span style='padding-left:5px;'>Net GW Availability (2025)</span></div>
+
+              <div style='display:inline-flex;padding-left:10px;'>
+              <div style='width:17px;height:16px;border:1.6px solid white;background-color:blue;border-radius: 4px'></div>
+              <span style='padding-left:5px;'>Allocated Domestic draft as on 2025</span></div>
+        </div>
+
+      </div>
+      <div>
+          <hr id="akahchart_footer_hr">
+          <div style="display: inline-flex;">
+              <div class="jimu-btn akah_buttonStyle"
+                    style="margin-top: 6px;margin-left: 250px;background-color: #313c3d;text-align: center;"
+                   data-dojo-attach-event="onclick:gotoakahAnalytics">Previous
+              </div>
+              <!-- <div class="jimu-btn akah_buttonStyle"
+                    style="margin-top: 6px;margin-left: 10px;background-color: #313c3d;text-align: center;"
+                   data-dojo-attach-event="onclick:gotoakahLegend">Next
+              </div> -->
+          </div>
+      </div>
+  </div>
+    <!-- <div data-dojo-attach-point="akah_tab_4">
+      <div style="display:flex">
+        <div style="flex:1">
+          <div style="margin-bottom: 15px;margin-top:5px">
+            <p style="font-size:large;font-weight: bold;"><u>Layer List</u></p>
+          </div>
+          <div id="layer_list">
+            <div id="selectedwells_check_box">
+              <label for="selectedwell_check" style="font-size:16px;font-weight: bold;">Selected Wells &nbsp;&nbsp;</label>
+              <input id="selectedwell_check" />
+            </div>
+          </div>
+          </div>
+        <div style="flex:1">
+        <div style="margin-bottom: 15px;margin-top:5px">
+        <p style="font-size:large;font-weight: bold;"><u>Legend</u></p>
+      </div>
+      <div id="legend_sw"></div>
+    </div>
+      </div>
+      <div style="position:relative;bottom:-52vh">
+          <hr id="akahlegend_footer_hr">
+          <div style="display: inline-flex;">
+              <div class="jimu-btn akah_buttonStyle"
+                    style="margin-top: 6px;margin-left: 310px;background-color: #313c3d;text-align: center;"
+                   data-dojo-attach-event="onclick:gotoakahtab3">Previous
+              </div>
+          </div>
+      </div>
+    </div> -->
+</div>

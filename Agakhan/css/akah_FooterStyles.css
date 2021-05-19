@@ -1,0 +1,15 @@
+/*The below styles of classes and id's are effecting the footer to be at the bottom of the page,
+irrespective of the extent of the application */
+
+/*styles of lake Report tab footer in LakeInfoSummary widget*/
+#akah_SummaryStyles, #akah_chartTabStyles{
+    height: 100%;
+}
+.akah_summary_content{
+    min-height: calc(100% - 28px);
+    height: calc(100% - 28px);
+    overflow: auto;
+}
+.akah_chart_content{
+    min-height: 100%;
+}
