@@ -1,0 +1,173 @@
+.jimu-widget-demo div:first-child{
+  color: red;
+}
+#viz_locationStyle{
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+    line-height: 2em;
+}
+#viz_loader, #viz_loader_1, #viz_loader_5,
+#viz_loader_w, #viz_loader_1w, #viz_loader_5w{
+  display: none;
+  width: 35px;
+  height: 35px;
+  margin: 15px 10px 0px 10px;
+  margin-right: 10px;
+}
+#viz_st, #viz_dist,#viz_block,#viz_vill{
+  width: 65%;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#month_selection, #year_selection, #year_selection1, #year_selection2,
+#month_selct1, #fiveYear_selection1, #fiveYear_selection2,
+#month_selection_w, #year_selection_w, #year_selection1_w, #year_selection2_w,
+#month_selct1_w, #fiveYear_selection1_w, #fiveYear_selection2_w{
+  width: 82px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+/*id of the dialog box used to displyay trend of visual analysis*/
+/*please make sure id is same for any application.*/
+#trendAnalysis_DialogBox{
+  width: 483px;
+  height: 465px;
+  position: absolute;
+  left: 114px !important;
+  top: 107px !important;
+  opacity: 1;
+  z-index: 950;
+  background-color: rgb(255, 255, 255);
+}
+.jimu-widget-Visualization .claro .dijitSelect {
+    background-color: #f0f0f0;
+    height: 34px;
+    border-radius: 7px;
+    width: 125%;
+}
+.dijitDialogUnderlay{
+  opacity: 0;
+}
+.justify_radioSpace{
+  /* padding-left: 20px; */
+}
+.label_classify{
+  font-size:13px;
+  font-weight: bold;
+}
+.classify_styles{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.legend_v{
+  float: right;
+  margin-right: 125px;
+}
+.viz_buttonStyle{
+    background: linear-gradient(rgb(255 255 255),rgb(255 255 255)) padding-box, /*this is your grey background*/ linear-gradient(to right, #46C450, #00833f) border-box;
+    color: #313149;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    height: 31px;
+    font-size: 13px;
+    /* padding-bottom: 28px; */
+    line-height: 0px;
+    box-shadow: 0 0 6px #abbed0;
+    margin-top: 15px;
+    background-color: #313c3d;
+    text-align: center;
+}
+.viz_buttonStyle:hover {
+    background: linear-gradient(to right, #46C450, #00833f) border-box;
+    /* color: #485566; */
+    /* font-weight: 600; */
+    color: #f0f0f0;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Avenir Medium';
+    margin-top: 15px;
+    background-color: #313c3d;
+    text-align: center;
+}
+/*classes used for slider*/
+.custom-range {
+  width: 120px;
+  height: 3px;
+  margin-left: 7px;
+  margin-top: 9px;
+}
+.custom-range::-ms-thumb {
+  background: gray;
+}
+.layer_remove{
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  margin-left: 5px;
+}
+.layer_play{
+  /*display: none;*/
+   width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  margin-left: 5px;
+}
+.layer_information{
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  margin-top: 1px;
+  display: none;
+}
+.layer_operate{
+  display: inline-flex;
+  margin-left: 3px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+#play_hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px 3px 0px 3px;
+    font-size: 13px;
+    display: none;
+}
+.innerdiv1{
+  margin-top: 5px;
+  width: 200px;
+}
+.innerdiv1_5{
+  margin-top: 5px;
+  width: 230px;
+}
+.layer_remove:hover{
+  cursor: pointer;
+}
+.layer_play:hover{
+  cursor: pointer;
+}
+.layer_information:hover{
+  cursor: pointer;
+}
+.layer_operate:hover{
+  cursor: pointer;
+}
+.innerdiv2{
+  display: inline-flex;
+}
+#jimu_dijit_TabContainer3_2 .control-node{
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+#jimu_dijit_TabContainer3_3 .control-node{
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+#fiveYear_selection2,#year_selection1{
+  width: 110px;
+}

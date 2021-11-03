@@ -1,0 +1,629 @@
+@import url("akah_FooterStyles.css");
+@import url("akah_TabContentStyles.css");
+@import url("Visualizationstyle.css");
+
+.jimu-widget-AKAHSummary .jimu-widget-demo div:first-child{
+  color: red;
+}
+.jimu-widget-AKAHSummary{
+  font-family: Arial !important;
+}
+.jimu-widget-AKAHSummary .jimu-tab3 .tab-item-div{
+  height: 30px;
+}
+#widgets_AKAHSummary_Widget_47_panel > .jimu-panel-content{
+  /* height:calc(100% - 35px); */
+}
+div#gwr_graph1 rect[fill^="url(#dojoxUnique"], div#gwr_graph2 rect[fill^="url(#dojoxUnique"] {
+    fill: none;
+    stroke: none;
+}
+div#gwr_graph1 rect[stroke="rgb(181, 188, 199)"],div#gwr_graph2 rect[stroke="rgb(181, 188, 199)"] {
+    stroke: none;
+}
+#column_lineChart rect{
+    fill: transparent !important;
+    stroke: none !important;
+}
+#main_window_Data_vis #jimu_dijit_TabContainer3_1{
+  height: calc(100% - 100px);
+}
+#main_window_Data_vis #jimu_dijit_ViewStack_1{
+  height: calc(100% - 30px);
+}
+
+#gwr_info{
+  position: sticky;
+  top: 0px;
+  border-color: #d3d3d3;
+  border-width: 2px;
+  border-style: solid;
+  z-index: 1;
+}
+
+
+/*Container of Dashboard*/
+.jimu-widget-AKAHSummary div#jimu_dijit_TabContainer3_0{
+  /*height: 100%;*/
+}
+div#_5{
+  height: 100%;
+}
+/*View Stack of Controller*/
+.jimu-widget-AKAHSummary div#jimu_dijit_ViewStack_0 {
+  height: calc(100% - 110px);
+}
+.jimu-widget-AKAHSummary div#dijit__WidgetBase_1{
+  height: 100%;
+}
+
+/* #hmda_lakeSummaryStyles .hmda_lakesummary_content {
+    height: 100%;
+    overflow-y: auto;
+} */
+.tab-widget-frame .title-label {
+color: #00833f !important;
+}
+.bar_akah {
+  width: 100%;
+  height: 30px;
+  background-color: #FFF;
+  /* background-color: #f5f5f5; */
+}
+.bar_akah-inner {
+  width: 0%;
+  height: 63%;
+  margin-top: 0.8%;
+  position: relative;
+  background-color: #00833f;
+  transition: width 3000ms linear;
+  border-radius: 0px 6px 6px 0px;
+}
+.bar_akah-inner:after {
+    color: #fff;
+    line-height: 23px;
+    content: attr(data-percent);
+    position: absolute;
+    right: 2.5%;
+    font-size: 12px;
+}
+.vill_info_val{
+  font-weight: 600;
+  /* color: #1B4F72; */
+  color: #00833f;
+  font-family: auto;
+  font-size: 22px;
+}
+.dijitCheckBox input, .dijitRadio input {
+  cursor: pointer !important;
+}
+/* @media screen and (min-width: 500px) and (min-height: 500px){ */
+
+  #widgets_AKAHSummary_Widget_47_panel{
+    /* width: 48% !important;
+    left: 39px !important;
+    top: 0px !important;
+    /* height: 95% !important;  */
+    /* min-width: 580px !important;  */
+  }
+/* } */
+
+#widgets_AKAHSummary_Widget_47_panel .jimu-widget-frame.jimu-container{
+  padding: 0px 2px 0px 2px;
+}
+.akahHeadings{
+  color: black;
+}
+.akahNames{
+  color: #00833f;
+}
+.akah_seperatorVL{
+    border-left: 0.2px solid #e8e7e7;
+    height: 140px;
+    margin: 2px 20px 10px 20px;
+}
+.jimu-widget-AKAHSummary .claro .dijitSelect {
+    background-color: #f0f0f0;
+    height: 34px;
+    border-radius: 7px;
+    width: 125%;
+}
+#akahLocation_info, #summary_location_info, #dv_info,#gwr_info{
+    text-align: center;
+    font-size: 15px;
+    padding: 4px;
+    font-weight: 600;
+    background-color: #f9f8f8;
+    border-radius: 10px;
+    margin: 0px 30px 0px 10px;
+}
+#akahLocation_info{
+  font-size: 12px;
+  padding: 5px;
+  margin: 10px 30px 5px 10px;
+}
+
+#akah_fromselectMonthNDWI, #akah_fromselectYearNDWI, #akah_toselectMonthNDWI,#akah_toselectYearNDWI,
+#akah_fromselectMonthNDVI, #akah_fromselectYearNDVI, #akah_toselectMonthNDVI,#akah_toselectYearNDVI,
+#akah_fromselectMonthSWB, #akah_fromselectYearSWB, #akah_toselectMonthSWB,#akah_toselectYearSWB,#akah_fromselectYearABSWB, #akah_toselectYearABSWB,
+#akah_selectMonsoon,#akah_selectYear,#fromRFMonth_id,#fromRFYear_id,#toRFMonth_id,#toRFYear_id
+{
+  height: 26px;
+  width: 75px;
+  border-radius:5px;
+}
+#summary_maharashtra, #summary_gujarath{
+  line-height: 2.4em;
+  font-size: 16px;
+  color: #000;
+  font-family: sans-serif;
+}
+.akah_hr{
+    margin: 0px;
+    height: 1.1px;
+    background-color: #d5d7d7;
+    border: none;
+}
+#point{
+    background: url(../images/locate.png) center no-repeat;
+    background-size: 22px 22px !important;
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+    border: 1px solid #485566;
+    border-radius: 4px;
+    margin: 0px 10px 0px 10px;
+}
+#akahsummary_footer_hr,#akahlocation_footer_hr,#akahchart_footer_hr,#akahlegend_footer_hr{
+  margin: 7px 0px 0px 0px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+/* #akahClearGraphics_locationtab{
+    background: linear-gradient(rgb(255 255 255),rgb(255 255 255)) padding-box, this is your grey background linear-gradient(to right, #c9cbca, #7b7d7c) border-box;
+
+ /* } */
+/* #akahClearGraphics_locationtab:hover{
+    background: linear-gradient(to right, #c9cbca, #7b7d7c) border-box;
+    /*color: #485566;*/
+/* } */ 
+.akah_buttonStyle{
+    background: linear-gradient(rgb(255 255 255),rgb(255 255 255)) padding-box, /*this is your grey background*/ linear-gradient(to right, #46C450, #00833f) border-box;
+    color: #313149;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    height: 31px;
+    font-size: 13px;
+    /* padding-bottom: 32px; */
+    line-height: 0px;
+    box-shadow: 0 0 6px #abbed0;
+}
+.akah_buttonStyle:hover {
+    background: linear-gradient(to right, #46C450, #00833f) border-box;
+    color: #f0f0f0;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Avenir Medium';
+}
+#akah_locationStyle{
+    /*color: #000964;*/
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+    line-height: 2em;
+}
+.jimu-widget-AKAHSummary .arcgisSearch .searchGroup .searchInput {
+  width: 122px;
+}
+.akah_Wellsum{
+    font-size: 16px;
+    line-height: 2.2em;
+    color: #000;
+    width: 120%;
+    display: inline-grid;
+    text-align: center;
+}
+.jimu-widget-AKAHSummary .akah_wellRegistration{
+    font-size: 16px;
+    color: #000;
+    display: inline-grid;
+    text-align: center;
+}
+.jimu-widget-AKAHSummary .Akahcgwb_labels{
+    line-height: 2.2em;
+    margin-top: 20px;
+    padding-left: 6%;
+    font-size: 16px;
+    color: #000;
+    width: 120%;
+    display: inline-grid;
+    text-align: center;
+}
+.jimu-widget-AKAHSummary .akah_search{
+    font-size: 14px;
+    padding: 4px 4px 0px 0px;
+    /* margin-right: 30px; */
+}
+#wellcount_chart svg rect, #cgwbcount_chart svg rect{
+  width: 0px !important;
+  height: 0px !important;
+}
+#rfYearlyChart svg rect, #rfAnnDecChart svg rect{
+  /* fill:#E9EBD5; */
+  fill:none;
+}
+#rfYearlyChart svg g g g rect, #rfAnnDecChart svg g g g rect{
+  fill: #2E86C1;
+}
+.graph_bg rect{
+  fill: transparent !important;
+  stroke: none;
+}
+#rainfall_graph rect{
+  fill: transparent !important;
+  stroke: none;
+}
+#state_id,#district_id, #village_id, #block_id{
+  border-radius: 7px;
+    font-size: 14px;
+    width: 93% !important;
+}
+#swb_id{
+  border-radius: 7px;
+  font-size: 14px;
+  width: 150px !important;
+  height:26px;
+}
+#state_iddv, #district_iddv, #village_iddv, #block_iddv {
+    border-radius: 7px;
+    font-size: 14px;
+    width: 93% !important;
+}
+#akah_st, #akah_dist,#akah_block,#akah_vill, #layerWellFilter,#stateWellFilter, #distrWellFilter,#blockWellFilter, #villageWellFilter{
+  width: 65%;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#akah_vill{
+  max-width:200px;
+  overflow: hidden;
+}
+#searchVillageAKAH{
+  /* margin-top: 5%; */
+}
+.countall{
+    padding-top: 10px;
+    /* color: #1B4F72; */
+    color: #00833f;
+    font-size: 20px;
+    font-family: auto !important;
+}
+.load_image{
+  width: 23px;
+}
+#pr_load, #pr_go_load{
+    width: 33px;
+    height: 33px;
+    margin-top: 7px;
+    margin-left: 2px;
+}
+.count_value {
+    padding-top: 10px;
+    color: #00833f;
+  /* color: #1B4F72; */
+    font-size:16px;
+    font-family: auto !important;
+}
+
+.countall1{
+    padding-top: 10px;
+  color: #00833f;
+  /* color: #1B4F72; */
+    font-size: 16px;
+    font-family: auto !important;
+}
+
+.count_value1 {
+    padding-top: 10px;
+  color: #00833f;
+  /* color: #1B4F72; */
+    font-size:16px;
+    font-family: auto !important;
+}
+
+.akah_stateCount{
+    padding-left: 40px;
+    padding-top: 10px;
+  color: #00833f;
+  /* color: #1B4F72; */
+    font-size: 25px;
+    font-family: auto !important;
+}
+
+.message-panel .message-title, .message-title.outputs{
+  margin-top: 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+ .message-panel .message-title.outputs{
+  margin-top: 20px;
+}
+
+ .message-panel .job-message{
+  margin-top: 10px;
+  font-size: 12px;
+  color: #686868;
+}
+
+ .message-panel .job-message.outputtip{
+  margin-top: 20px;
+}
+
+ .message-panel .job-message.success{
+  color: #00B050;
+}
+
+ .message-panel .job-message.failed{
+  color:#E84B4B;
+}
+
+ .message-panel .job-message.cancelled{
+  color: #51B1FE;
+}
+.jimu-widget-AKAHSummary .export-node {
+  width: 16px;
+  height: 16px;
+  background-image: url(images/download.png);
+  cursor: pointer;
+  margin: 10px 10px 0 10px;
+  display: inline-block !important;
+}
+
+.jimu-widget-AKAHSummary .export-node:hover {
+  background-image: url(images/download_hover.png);
+}
+.tooltipCB {
+  position: relative;
+  display: inline-block;
+
+}
+.tooltipCB .tooltiptextCB {
+  visibility: hidden;
+  width: 140px;
+  background-color: #fff;
+   border:1px solid black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  color: black;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  left: -62px;
+
+}
+.tooltipCB .tooltiptextCB1 {
+  visibility: hidden;
+  width: 140px;
+  background-color: #fff;
+   border:1px solid black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  color: black;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  right: 0px;
+
+}
+.tooltipCB .tooltiptextCB2 {
+  visibility: hidden;
+  width: 140px;
+  background-color: #fff;
+   border:1px solid black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  color: black;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: -62px;
+
+}
+.tooltipCB .tooltiptextCB3{
+    visibility: hidden;
+    background-color: #fff;
+    border:1px solid black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    color: black;
+    line-height: 1em;
+    font-size: 15px;
+    width: 120px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 25px;
+    left: 4px;
+}
+.tooltipCB:hover .tooltiptextCB,.tooltipCB:hover .tooltiptextCB1,.tooltipCB:hover .tooltiptextCB2,
+.tooltipCB:hover .tooltiptextCB3 {
+  visibility: visible;
+}
+#dijit_Dialog_0_underlay{
+  opacity: 0.9 !important;
+}
+.claro .dijitDialogUnderlay{
+  background-color: #00833f !important;
+}
+/* #akahLulc_Chart{
+  height: 240px !important;
+} */
+/* #akahLulc_Chart rect{
+  height: 0px !important;
+  width: 0px !important;
+} */
+#akah_selectMonsoon{
+  width: 135px;
+}
+#wq, #wl{
+  border-radius: 5px;
+  width: 33px;
+  height: 30px;
+  /* display: block; */
+  vertical-align: middle;
+  background: linear-gradient(rgb(255 255 255),rgb(255 255 255)) padding-box, /*this is your grey background*/ linear-gradient(to right, #46C450, #00833f) border-box;
+  color: #313149;
+  border: 3px solid transparent;
+  padding: 5px;
+}   
+.tab-widget-frame .jimu-panel-content {
+padding: 4px 4px 4px 4px !important;
+}
+
+.title h2.title-label{
+  color: #00833f !important;
+}
+.jimu-tab3 .tab-item-td.jimu-state-active {
+  color: #48494B;
+  border-bottom: 2px solid #00833f;
+  font-family: "Avenir Medium";
+  color: #00833f;
+font-weight:bold;
+}
+
+.jimu-tab3 .tab-item-td {
+  /* color: #00833f; */
+  border-bottom: 1px solid #00833f;
+ 
+}
+#dijit_Dialog_12, #dijit_Dialog_13{
+  top: 313px !important;
+  left: 404px !important;
+}
+.claro .dijitDialogTitleBar{
+  background-color: hsl(149, 100%, 26%) !important;
+}
+.dialogStyles{
+  cursor: pointer;
+  width: 140px;
+  display: inline-flex;
+}
+.dialogStyles:hover{
+  text-decoration: underline;
+}
+.claro .dijitDialogTitleBar .dijitDialogTitle{
+  color: #fff !important;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 16px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch  .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+ .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 13px;
+  left: 1px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch  input:checked + .slider {
+  background-color: #00833f;
+}
+
+.switch  input:focus + .slider {
+  box-shadow: 0 0 1px #00833f;
+}
+
+.switch  input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.switch .slider.round {
+  border-radius: 34px;
+  border: 1px dotted #00833f;
+}
+
+.switch  .slider.round:before {
+  border-radius: 50%;
+}
+/* #dijit_Dialog_11 div div div#rfYearlyChart, #rfYearlyChart{
+  width: 340px;
+  height: 230px;
+}
+#dijit_Dialog_11 div div div#rfAnnDecChart{
+  width: 250px;
+  height: 220px;
+}
+#rfAnnDecChart svg, #rfAnnDecChart{
+  height: 220px;
+  width: 240px;
+}
+#rfYearlyChart svg{
+  height: 250px;
+  width: 300px;
+} */
+/* #rfAnnDecChart svg g g g rect{
+  width: 35px;
+} */
+#rainfallDialogId .dijitDialogPaneContent, #rainfallDialogId .dijitDialogTitleBar{
+  width: 816px !important;
+}
+#rainfallDialogId .dijitDialogPaneContent{height: 559.3px !important;}
+#rfYearlyChartLegend tr{
+  display: grid;
+  line-height: 1.7em;
+    font-size: 11px;
+    font-weight: bold;
+}
+#rfYearlyChartLegend{float: right;
+    margin-right: 70px;
+    margin-top: 84px;
+    color: #00833f;
+    font-family: 'Arial';
+    /* width: 17%; */
+  }
+  #ndviarea_StackedBarChart{
+    height: 300px;
+    width: 500px;
+  }

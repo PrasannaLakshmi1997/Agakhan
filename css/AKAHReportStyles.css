@@ -1,0 +1,311 @@
+.akah_level1_heading{
+  /* color: #0473d4; */
+  color: #000;
+  color: #fff;
+  margin: 20px 0px 20px 0px;
+  font-size: 18px;
+  font-family: Arial;
+  font-weight: bold;
+  background-color: #00833f;
+  padding: 10px;
+  border-radius: 10px;
+}
+.akah_level2_hdng{
+  font-weight: 600;
+  font-size: 15px;
+  margin: 20px 0px 7px 0px;
+  /* padding-left: 30px; */
+}
+.info_styles{
+  text-align:justify;
+  font-size: 14px;
+  margin-right: 30px;
+  line-height: 1.5em;
+}
+.akah_level3_heading{
+  font-size: 18px;
+  font-weight:bold;
+}
+.akah_level2_content{
+  /* padding-left: 60px; */
+}
+.akah_level1_content{
+  /* padding-left: 30px; */
+}
+.vegt_chartsResize{
+  width: 350px !important;
+  height: 280px !important;
+}
+.tablesLeftColumn{
+  width: 50%;
+}
+#column_lineChart rect{
+    fill: transparent !important;
+    stroke: none !important;
+}
+.tablesRightColumn{
+  text-align: right;;
+}
+.th_head {
+    /* background: #87c1f4; */
+    font-size: 18px;
+    font-weight: 600;
+}
+.village_th_head{
+  background: #ffea84;
+  font-size: 15px;
+  font-weight: 600;
+}
+.th_head_temp {
+    background: #629bce03;
+    font-size: 13px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+.graph_bg rect{
+  fill: transparent !important;
+  stroke: none;
+}
+div#gw_bar_chart rect[fill^="url(#dojoxUnique"] {
+    fill: none;
+    stroke: none;
+}
+/*css modified from here*/
+#areaIrrig  rect {
+  fill: transparent !important;
+}
+#village_areaIrrig  rect {
+  fill: transparent !important;
+}
+/*css modified till here*/
+div#gw_bar_chart rect[stroke="rgb(181, 188, 199)"] {
+    stroke: none;
+}
+.akahReportTable{
+  border: 1px solid #C0C0C0;
+	border-collapse: collapse;
+	padding:5px;
+	width:97%;
+  /* padding-left:60px; */
+}
+
+.lulcReportTable{
+  border: 1px solid #C0C0C0;
+  border-collapse: collapse;
+  padding:5px;
+}
+.lulcReportTable tr td{
+  border: 1px solid #C0C0C0;
+  padding: 6px;
+  font-size: 12px;
+  width: 16%;
+  text-align: center;
+}
+
+.akahReportTable1, .akahReportTable2{
+  border: 1px solid #C0C0C0;
+	border-collapse: collapse;
+	padding:5px;
+	width:97%;
+  margin-bottom: 5px;
+}
+
+.akahReportTable tr td{
+	border: 1px solid #C0C0C0;
+	padding: 6px;
+  font-size: 12px;
+}
+.akahReportTable2 tr td{
+	border: 1px solid #C0C0C0;
+	padding: 6px;
+  font-size: 12px;
+  text-align: center;
+}
+.akahReportTable1 tr td{
+	border: 1px solid #C0C0C0;
+	padding: 6px;
+  /* width:50%; */
+}
+.ReportTable_subHdngs{
+	font-weight:bold;
+}
+.mapHdngSizes{
+    margin: 0px;
+    font-size: large;
+    padding-left: 100px;
+    line-height: 0px;
+}
+.ReportTable_subHdngs1{
+  font-size: 13px;
+	font-weight:bold;
+  text-align: center;
+}
+#rainfall_chart rect {
+    fill: none;
+    stroke: none;
+}
+.akahReportTableheadings{
+    /* color: #0473d4; */
+    color: #000;
+/*    font-weight: bold;
+    line-height: 2.2em;*/
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.akahReportTableSide_headings{
+	/*color: darkblue;*/
+}
+.esriCTReportMapImg{
+  margin-top: -35px;
+  max-width: 95%;
+}
+#rfYearlyChart svg rect, #rfAnnDecChart svg rect{
+  /* fill:#E9EBD5; */
+  fill:none;
+}
+#rfYearlyChart svg g g g rect, #rfAnnDecChart svg g g g rect{
+  fill: #2E86C1;
+}
+#dijit_Dialog_11 div div div#rfYearlyChart, #rfYearlyChart{
+  width: 340px;
+  height: 230px;
+}
+#dijit_Dialog_11 div div div#rfAnnDecChart{
+  width: 250px;
+  height: 220px;
+}
+/* #rfAnnDecChart svg{
+  height: 220;
+  width: 240;
+} */
+#rfAnnDecChart{
+  width: 250px;
+  height: 220px;
+}
+#rfYearlyChartLegend tr{
+  display: grid;
+  line-height: 1.7em;
+    font-size: 11px;
+    font-weight: bold;
+}
+#rfYearlyChartLegend{
+  float: right;
+  margin-right: 39px;
+  margin-top: 84px;
+  width: 17%;
+  }
+.waterCategoryStyles{
+  color: #2E86C1;
+  font-weight: bold;
+  font-size: 18px;
+}
+#waterbalancediv{
+  background-image: url(../images/waterBalance.png);
+  height: 555px;
+  background-color: #E6ECE6;
+  margin-bottom: 10px;
+}
+#waterAvaildiv{
+  background-image: url(../images/waterComposite.png);
+  height: 585px;
+  background-color: #E6ECE6;
+  margin-bottom: 10px;
+}
+#waterBudgetdiv{
+  background-image: url(../images/waterBudget.png);
+  height: 595px;
+  width: 99%;
+  background-color: #E6ECE6;
+  margin-bottom: 10px;
+}
+.ndwiCatStyle{
+  text-align: center;
+    line-height: 0em;
+    margin-top: 8px;
+}
+#coverpage_id{
+  background-image: url(../images/CoverPage.png);
+  color: #fff;
+  padding: 60px;
+  height: 297px;
+  line-height: 1.5em;
+  background-size: 800px 400px;
+  background-repeat: no-repeat;
+}
+/* #ndwiareaChart_report{
+height: 250px;
+width: 300px;
+} */
+.esriCTPageBreak, #reportMain{
+  font-family: Arial !important;
+}
+/* #village_areaIrrig{
+  height: 180px !important;
+  width: 180px !important;
+} */
+/* #village_areaIrrig svg rect{
+  height: 0px !important;
+  width: 0px !important;
+} */
+.coverpagehead{
+  background-color: #00833f;
+  height: 35px;
+  width: 20%;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+}
+#reportHeader{
+  display: none;
+}
+/* .esriCTHTMLData{
+  border: 1px solid #00833f;
+padding: 20px;
+margin-bottom: 10px;
+} */
+.da_img_styles{
+  height: 301px;
+  padding-left: 2%;
+}
+.da_p_styles{
+  font-size: 15px;
+  margin: 0px 0px 26px 0px;
+}
+#hydroGeology_styles{
+  width:97%;border-collapse:collapse;border:1px solid grey;
+  font-size: 13px;
+  padding: 5px;
+}
+#hydroGeology_styles tr td{
+  border: 1px solid grey;
+  padding: 9px;
+}
+#Rainfall_wd{
+  background-image: url(../images/Rainfall_wd.png);
+  background-repeat: no-repeat;
+  font-weight: bold;
+  height: 230px;
+  width: 200px;
+}
+#Groundwaterlevel_wd {
+background-image: url(../images/Groundwaterlevel_wd.png);
+background-repeat: no-repeat;  font-weight: bold;
+height: 230px;
+width: 200px;
+}
+#Surfacewateravailability_wd{
+  background-image: url(../images/Surfacewateravailability_wd.png);
+  background-repeat: no-repeat;  font-weight: bold;
+  height: 230px;
+  width: 200px;
+}
+#Vegetation_wd{
+    background-image: url(../images/Vegetation_wd.png);
+    background-repeat: no-repeat;  font-weight: bold;
+    height: 230px;
+    width: 200px;
+}
