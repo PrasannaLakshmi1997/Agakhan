@@ -49,7 +49,7 @@
                           <div>
                               <span style="font-size: 13px;">Villages under Survey</span>
                               <div class="tooltipCB">
-                                <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_villageSurvey" style="width: 18px;height: 18px;vertical-align: middle;">
+                                <img src="widgets/Agakhan/images/info.png"  id="infobtn_villageSurvey" style="width: 18px;height: 18px;vertical-align: middle;">
                                 <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;    left: -128px;">Villages under Survey</span>
                               </div>
                           </div>
@@ -61,7 +61,7 @@
                           <div>
                             <span style="font-size: 13px;">Long-term Observation Wells</span>
                             <div class="tooltipCB">
-                              <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_obsWell" style="width: 18px;height: 18px;vertical-align: middle;">
+                              <img src="widgets/Agakhan/images/info.png"  id="infobtn_obsWell" style="width: 18px;height: 18px;vertical-align: middle;">
                               <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;">Long-term Observation Wells</span>
                             </div>
                           </div>
@@ -73,7 +73,7 @@
                           <div>
                               <span style="font-size: 13px;line-height: normal;">Total Population Benefited by Project</span>
                               <div class="tooltipCB">
-                                <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_totalPopltn" style="width: 18px;height: 18px;vertical-align: middle;">
+                                <img src="widgets/Agakhan/images/info.png"  id="infobtn_totalPopltn" style="width: 18px;height: 18px;vertical-align: middle;">
                                 <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;
                                 left: -35px;">Population benefited</span>
                               </div>
@@ -93,7 +93,7 @@
                               <div>
                                 <span style="font-size: 13px;">WL Pre-monsoon</span>
                                 <div class="tooltipCB">
-                                  <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_wlPremon" style="width: 18px;height: 18px;vertical-align: middle;">
+                                  <img src="widgets/Agakhan/images/info.png"  id="infobtn_wlPremon" style="width: 18px;height: 18px;vertical-align: middle;">
                                   <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;">Water Levels(CGWB Data): Pre-monsoon</span>
                                 </div>
                               </div>
@@ -106,7 +106,7 @@
                               <div>
                                 <span style="font-size: 13px;">WL Post-monsoon</span>
                                 <div class="tooltipCB">
-                                  <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_wlPostmon" style="width: 18px;height: 18px;vertical-align: middle;">
+                                  <img src="widgets/Agakhan/images/info.png"  id="infobtn_wlPostmon" style="width: 18px;height: 18px;vertical-align: middle;">
                                   <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;">Water Levels(CGWB Data):  Post-monsoon</span>
                                 </div>
                               </div>
@@ -120,7 +120,7 @@
                           <div>
                               <span style="font-size: 13px;">Aquifer</span>
                               <div class="tooltipCB">
-                                <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_aquifer" style="width: 18px;height: 18px;vertical-align: middle;">
+                                <img src="widgets/Agakhan/images/info.png"  id="infobtn_aquifer" style="width: 18px;height: 18px;vertical-align: middle;">
                                 <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;">Major aquifer - Regionally extensive aquifer system</span>
                               </div>
                           </div>
@@ -132,7 +132,7 @@
                           <div>
                               <span style="font-size: 13px;">Watershed Area</span>
                               <div class="tooltipCB">
-                                <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_watershedBasin" style="width: 18px;height: 18px;vertical-align: middle;">
+                                <img src="widgets/Agakhan/images/info.png"  id="infobtn_watershedBasin" style="width: 18px;height: 18px;vertical-align: middle;">
                                 <span class="tooltiptextCB3" style="font-size: 13px;left: -100px;line-height: 1rem;">Watershed Area</span>
                               </div>
                           </div>
@@ -147,7 +147,7 @@
                       <div>
                           <span style="font-size: 13px;">Water Quality (CGWB)</span>
                           <div class="tooltipCB">
-                            <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_waterQualitycgwb"
+                            <img src="widgets/Agakhan/images/info.png"  id="infobtn_waterQualitycgwb"
                             style="width: 18px;height: 18px;vertical-align: middle;">
                             <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;width:140px;">WaterQuality(CGWB)</span>
                           </div>
@@ -202,8 +202,10 @@
                 <div data-dojo-attach-point="locVillId"></div>
               </div>
             </div>
-            <div style="display: inline-flex;margin: 2% 0% 0% 45%;">
-              <button id="go_toVillage" class="jimu-btn akah_buttonStyle" style="margin-top: 5px;background-color: #313c3d;"
+            <div style="display: inline-flex;margin: 2% 0% 0% 45%;align-items: center;">
+              <div id='arrowGoBtn'></div>
+              <!-- <img src='widgets/Agakhan/images/green_arrow.png' style='height: 25px;margin-right: 8px;' id='arrowblink' alt='rightarrow'> -->
+              <button id="go_toVillage" class="jimu-btn akah_buttonStyle" style="margin-top: 5px;background-color: #313c3d;cursor: not-allowed;"
                    data-dojo-attach-event="onclick:showAKAHResult">Go</button>
                    <img id="pr_go_load" src='' alt="Loading.." style="display:none">
               <!-- <button class="jimu-btn akah_buttonStyle" style="margin-top: 5px;margin-left: 6%;width: 90px;background-color: #313c3d;"
@@ -223,7 +225,7 @@
                             <div>
                                 <span style="font-size: 13px;">Observation Wells</span>
                                 <div class="tooltipCB">
-                                  <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_obsWells" style="width: 18px;height: 18px;vertical-align: middle;">
+                                  <img src="widgets/Agakhan/images/info.png"  id="infobtn_obsWells" style="width: 18px;height: 18px;vertical-align: middle;">
                                   <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;">Observation Wells</span>
                                 </div>
                             </div>
@@ -239,7 +241,7 @@
                                     Pre-monsoon Water Level
                                   </span>
                                   <div class="tooltipCB">
-                                    <img src="widgets/AKAHSummary/images/info.png"
+                                    <img src="widgets/Agakhan/images/info.png"
                                       id="infobtn_premonWaterLevel" style="width: 18px;height: 18px;
                                       vertical-align: middle;">
                                     <span class="tooltiptextCB3" style="font-size: 13px;
@@ -255,11 +257,11 @@
                               <div style="display:inline-flex;align-items: center;">
                                   <span style="font-size: 13px;line-height: normal;">Water Quality</span>
                                   <div class="tooltipCB">
-                                    <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_wq" style="width: 18px;height: 18px;vertical-align: middle;">
+                                    <img src="widgets/Agakhan/images/info.png"  id="infobtn_wq" style="width: 18px;height: 18px;vertical-align: middle;">
                                     <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;left: 0px;">Water quality status is based on Water Quality standards of Bureau of Indian Standards</span>
                                   </div>
                                   <!--<div class="tooltipWQ" style="padding-left:5px">
-                                    <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_WQ" style="width: 18px;height: 18px;" data-dojo-attach-event="onclick:displayWQInfo">
+                                    <img src="widgets/Agakhan/images/info.png"  id="infobtn_WQ" style="width: 18px;height: 18px;" data-dojo-attach-event="onclick:displayWQInfo">
                                   </div> -->
                               </div>
                             </div>
@@ -274,7 +276,7 @@
                               <div>
                                   <span style="font-size: 13px;">Major Crops</span>
                                   <div class="tooltipCB">
-                                    <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_majorCrops" style="width:18px;height:18px;vertical-align:middle;">
+                                    <img src="widgets/Agakhan/images/info.png"  id="infobtn_majorCrops" style="width:18px;height:18px;vertical-align:middle;">
                                     <span class="tooltiptextCB3" style="font-size:13px;line-height:1rem;">Major Crops</span>
                                   </div>
                               </div>
@@ -288,7 +290,7 @@
                               <div>
                                   <span style="font-size: 13px;line-height: 1.2em;">Irrigated Area</span>
                                   <div class="tooltipCB">
-                                    <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_irrArea" style="width: 18px;height: 18px;vertical-align: middle;">
+                                    <img src="widgets/Agakhan/images/info.png"  id="infobtn_irrArea" style="width: 18px;height: 18px;vertical-align: middle;">
                                     <span class="tooltiptextCB3" style="font-size: 13px;left: -80px;line-height: 1rem;">Irrigated Area - Census 2011</span>
                                   </div>
                               </div>
@@ -299,7 +301,7 @@
                               </div>
                               <span style="font-size: 13px;line-height: 1.2em;">Area Irrigated by Ground Water</span>
                               <div class="tooltipCB">
-                                <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_area_irrGndwater" style="width: 18px;height: 18px;vertical-align: middle;">
+                                <img src="widgets/Agakhan/images/info.png"  id="infobtn_area_irrGndwater" style="width: 18px;height: 18px;vertical-align: middle;">
                                 <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;">Area Irrigated by Ground Water</span>
                               </div>
                           </div>
@@ -335,7 +337,7 @@
                             <div>
                                 <span style="font-size: 13px;">Village Population</span>
                                 <div class="tooltipCB">
-                                  <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_villPop" style="width: 18px;height: 18px;vertical-align: middle;">
+                                  <img src="widgets/Agakhan/images/info.png"  id="infobtn_villPop" style="width: 18px;height: 18px;vertical-align: middle;">
                                   <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;">Village population as per Census 2011</span>
                                 </div>
                             </div>
@@ -347,7 +349,7 @@
                           <div>
                             <span style="font-size: 13px;line-height: normal;">Sex Ratio</span>
                             <div class="tooltipCB">
-                              <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_sexRatio" style="width: 18px;height: 18px;vertical-align: middle;">
+                              <img src="widgets/Agakhan/images/info.png"  id="infobtn_sexRatio" style="width: 18px;height: 18px;vertical-align: middle;">
                               <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;">Sex ratio (Female : Male)</span>
                             </div>
                           </div>
@@ -359,7 +361,7 @@
                             <div>
                               <span style="font-size: 13px;line-height: 1.2em;">Aquifer</span>
                               <div class="tooltipCB">
-                                <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_villAquifer" style="width: 18px;height: 18px;vertical-align: middle;">
+                                <img src="widgets/Agakhan/images/info.png"  id="infobtn_villAquifer" style="width: 18px;height: 18px;vertical-align: middle;">
                                 <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;">Major aquifer - Regionally extensive aquifer system</span>
                               </div>
                             </div>
@@ -371,7 +373,7 @@
                             <div>
                                 <span style="font-size: 13px;line-height: 1.2em;">Watershed Area</span>
                                 <div class="tooltipCB">
-                                  <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_villWatershed" style="width: 18px;height: 18px;vertical-align: middle;">
+                                  <img src="widgets/Agakhan/images/info.png"  id="infobtn_villWatershed" style="width: 18px;height: 18px;vertical-align: middle;">
                                   <span class="tooltiptextCB3" style="font-size: 13px;line-height: 1rem;left: -100px;">Watershed Area</span>
                                 </div>
                             </div>
@@ -582,7 +584,7 @@
                                 data-dojo-type="dijit/form/RadioButton">
                               <label id="lulc_label" class="label_e" style="font-size:12px;font-weight: bold;">Land Use Land Cover</label>
                               <div class="tooltipCB">
-                                <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_lulc" style="width: 18px;height: 18px;vertical-align: middle;">
+                                <img src="widgets/Agakhan/images/info.png"  id="infobtn_lulc" style="width: 18px;height: 18px;vertical-align: middle;">
                                 <span class="tooltiptextCB"  style="font-size: 13px;line-height: 1rem;">Land Use Land Cover</span>
                               </div>
                             </li>
@@ -592,7 +594,7 @@
                                 data-dojo-type="dijit/form/RadioButton">
                               <label id="ndwi_label" class="label_e" style="font-size:12px;font-weight: bold;">Water Index (NDWI)</label>
                               <div class="tooltipCB">
-                                <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_ndwi" style="width: 18px;height: 18px;vertical-align: middle;">
+                                <img src="widgets/Agakhan/images/info.png"  id="infobtn_ndwi" style="width: 18px;height: 18px;vertical-align: middle;">
                                 <span class="tooltiptextCB"  style="font-size: 13px;line-height: 1rem;">Normalized Difference Water Index</span>
                               </div>
                             </li>
@@ -601,7 +603,7 @@
                                 data-dojo-type="dijit/form/RadioButton">
                               <label id="ndvi_label" class="label_e" style="font-size: 12px;font-weight: bold;">Vegetation Index (NDVI)</label>
                               <div class="tooltipCB">
-                                <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
+                                <img src="widgets/Agakhan/images/info.png"  id="infobtn_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
                                 <span class="tooltiptextCB1"  style="font-size: 13px;line-height: 1rem;">Normalized Difference Vegetation Index</span>
                               </div>
                             </li>
@@ -718,25 +720,25 @@
                     <tr>
                       <td style="font-size: 14px;padding: 5px;"><span><input id="maxCheckBox_ndwi"/> <label for="maxCheckBox_ndwi"><b class="sublabels"> Maximum</b></label>
                         <div class="tooltipCB">
-                          <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_maxCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
+                          <img src="widgets/Agakhan/images/info.png"  id="infobtn_maxCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
                           <span class="tooltiptextCB2">Maximum is the highest amount or quantity possible, attainable, or required.</span>
                         </div>
                       </span></td>
                       <td style="font-size: 14px;padding: 5px;"><span><input id="meanCheckBox_ndwi"/> <label for="meanCheckBox_ndwi"><b class="sublabels"> Mean</b></label>
                         <div class="tooltipCB">
-                          <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_meanCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
+                          <img src="widgets/Agakhan/images/info.png"  id="infobtn_meanCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
                           <span class="tooltiptextCB2">Mean is an arithmetic average of the data set and it can be calculated by dividing a sum of all the data points with the number of data points in the data set. It is a point in a data set that is the average of all the data points we have in a set.</span>
                         </div>
                       </span></td>
                       <td style="font-size: 14px;padding: 5px;"><span><input id="minCheckBox_ndwi"/> <label for="minCheckBox_ndwi"><b class="sublabels"> Minimum</b></label>
                         <div class="tooltipCB">
-                          <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_minCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
+                          <img src="widgets/Agakhan/images/info.png"  id="infobtn_minCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
                           <span class="tooltiptextCB2">Minimum is the least or smallest quantity possible, attainable, or required.</span>
                         </div>
                       </span></td>
                       <td style="font-size: 14px;padding: 5px;"><span><input id="standardCheckBox_ndwi"/> <label for="standardCheckBox_ndwi"><b class="sublabels"> Standard deviation</b></label>
                         <div class="tooltipCB">
-                          <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_standardCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;">
+                          <img src="widgets/Agakhan/images/info.png"  id="infobtn_standardCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;">
                           <span class="tooltiptextCB2">A standard deviation is a statistic that measures the dispersion of a dataset relative to its mean. The standard deviation is calculated as the square root of variance by determining each data point's deviation relative to the mean.</span>
                         </div>
                       </span></td>
@@ -756,13 +758,13 @@
                       <tr>
                         <td style="font-size: 14px;padding: 5px;"><span><input id="waterCheckBox_ndwi"/> <label for="waterCheckBox_ndwi"><b class="sublabels"> Water Percentage</b></label>
                           <div class="tooltipCB">
-                            <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_maxCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
+                            <img src="widgets/Agakhan/images/info.png"  id="infobtn_maxCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
                             <span class="tooltiptextCB2">Water Percentage</span>
                           </div>
                         </span></td>
                         <!-- <td style="font-size: 14px;padding: 5px;"><span><input id="swaterCheckBox_ndwi"/> <label for="swaterCheckBox_ndwi"><b class="sublabels"> Surface Water Percentage</b></label>
                           <div class="tooltipCB">
-                            <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_meanCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
+                            <img src="widgets/Agakhan/images/info.png"  id="infobtn_meanCheckBox_ndwi" style="width: 18px;height: 18px;vertical-align: middle;" >
                             <span class="tooltiptextCB2">Surface Water Percentage</span>
                           </div>
                         </span></td> -->
@@ -785,25 +787,25 @@
                     <tr>
                       <td style="font-size: 14px;padding: 5px;"><span><input id="maxCheckBox_ndvi"/> <label for="maxCheckBox_ndvi"><b class="sublabels"> Maximum</b></label>
                         <div class="tooltipCB">
-                          <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;" >
+                          <img src="widgets/Agakhan/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;" >
                           <span class="tooltiptextCB">Maximum is the highest amount or quantity possible, attainable, or required.</span>
                         </div>
                       </span></td>
                       <td style="font-size: 14px;padding: 5px;"><span><input id="meanCheckBox_ndvi"/> <label for="meanCheckBox_ndvi"><b class="sublabels"> Mean</b></label>
                         <div class="tooltipCB">
-                          <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
+                          <img src="widgets/Agakhan/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
                           <span class="tooltiptextCB">Mean is an arithmetic average of the data set and it can be calculated by dividing a sum of all the data points with the number of data points in the data set. It is a point in a data set that is the average of all the data points we have in a set.</span>
                         </div>
                       </span></td>
                       <td style="font-size: 14px;padding: 5px;"><span><input id="minCheckBox_ndvi"/> <label for="minCheckBox_ndvi"><b class="sublabels"> Minimum</b></label>
                         <div class="tooltipCB">
-                          <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
+                          <img src="widgets/Agakhan/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
                           <span class="tooltiptextCB">Minimum is the least or smallest quantity possible, attainable, or required.</span>
                         </div>
                       </span></td>
                       <td style="font-size: 14px;padding: 5px;"><span><input id="standardCheckBox_ndvi"/> <label for="standardCheckBox_ndvi"><b class="sublabels"> Standard deviation</b></label>
                         <div class="tooltipCB">
-                          <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
+                          <img src="widgets/Agakhan/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
                           <span class="tooltiptextCB">A standard deviation is a statistic that measures the dispersion of a dataset relative to its mean. The standard deviation is calculated as the square root of variance by determining each data point's deviation relative to the mean.</span>
                         </div>
                       </span></td>
@@ -828,19 +830,19 @@
                       <tr>
                         <td style="font-size: 14px;padding: 5px;"><span><input id="denseCheckBox_ndvi"/> <label for="denseCheckBox_ndvi"><b class="sublabels"> Dense Vegetation(%)</b></label>
                           <div class="tooltipCB">
-                            <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;" >
+                            <img src="widgets/Agakhan/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;" >
                             <span class="tooltiptextCB">Dense Vegetation(%)</span>
                           </div>
                         </span></td>
                         <td style="font-size: 14px;padding: 5px;"><span><input id="sparseCheckBox_ndvi"/> <label for="sparseCheckBox_ndvi"><b class="sublabels"> Sparse Vegetation(%)</b></label>
                           <div class="tooltipCB">
-                            <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
+                            <img src="widgets/Agakhan/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
                             <span class="tooltiptextCB">Sparse Vegetation(%)</span>
                           </div>
                         </span></td>
                         <td style="font-size: 14px;padding: 5px;"><span><input id="lowCheckBox_ndvi"/> <label for="lowCheckBox_ndvi"><b class="sublabels"> Low Vegetation(%)</b></label>
                           <div class="tooltipCB">
-                            <img src="widgets/AKAHSummary/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
+                            <img src="widgets/Agakhan/images/info.png"  id="infobtn_standardCheckBox_ndvi" style="width: 18px;height: 18px;vertical-align: middle;">
                             <span class="tooltiptextCB">Low Vegetation(%)</span>
                           </div>
                         </span></td>

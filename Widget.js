@@ -253,11 +253,11 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
           //   inputLayersforInterpolation.push(akah_Tool.map.getLayer(agakhan_element));
           //   window.inputLayersforInterpolation =  inputLayersforInterpolation;
           // }
-          if(agakhan_element.includes("GWM_Stations")){
+          if(agakhan_element.includes("CGWB_Water_Level_Wells")){
             gwm_station_layer = akah_Tool.map.getLayer(agakhan_element);
             window.gwm_station_layer = gwm_station_layer;
           }
-          else if(agakhan_element.includes("AKAH_Selected_wells")){
+          else if(agakhan_element.includes("selected_wells_primary")){
             akah_selectedwells_layer = akah_Tool.map.getLayer(agakhan_element);
             window.akah_selectedwells_layer = akah_selectedwells_layer;
             // var legend = new esri.dijit.Legend({
@@ -266,11 +266,11 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
             // }, "legend_sw");
             // legend.startup()
           }
-          else if(agakhan_element.includes("states")){
+          else if(agakhan_element.includes("State_Boundaries")){
             akah_states_layer = akah_Tool.map.getLayer(agakhan_element);
             window.akah_states_layer = akah_states_layer;
           }
-          else if(agakhan_element.includes("Vilages_study_area_7521")){
+          else if(agakhan_element.includes("Villages_Study_Area_684")){
             window.akah_total_villages = akah_Tool.map.getLayer(agakhan_element);
             //akah_states_layer = akah_states_layer;
           }
@@ -282,7 +282,7 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
             akah_block_layer = akah_Tool.map.getLayer(agakhan_element);
             window.akah_block_layer = akah_block_layer;
           }
-          else if(agakhan_element.includes("agakhan_Villages")){
+          else if(agakhan_element.includes("Village_Boundaries")){
             akah_villages_layer = akah_Tool.map.getLayer(agakhan_element);
             window.akah_villages_layer = akah_villages_layer;
           }
@@ -291,11 +291,11 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
             window.akah_main_layer = akah_main_layer;
           }
 
-          else if(agakhan_element.includes("Aquifers_and_Watershed_7196")){
+          else if(agakhan_element.includes("Aquifer_System")){
             akah_aqui = akah_Tool.map.getLayer(agakhan_element);
             window.akah_aqui = akah_aqui;
           }
-          else if(agakhan_element.includes("Aquifers_and_Watershed_1950")){
+          else if(agakhan_element.includes("Watershed")){
             akah_watershed = akah_Tool.map.getLayer(agakhan_element);
             window.akah_watershed = akah_watershed;
           }
@@ -303,22 +303,22 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
             akah_sw = akah_Tool.map.getLayer(agakhan_element);
             window.akah_sw = akah_sw;
           }
-          else if(agakhan_element.includes("Surface_Water_Bodies15122020_429")){
+          else if(agakhan_element.includes("Surface_Water_Bodies_6152")){
             akah_sw1 = akah_Tool.map.getLayer(agakhan_element);
             window.akah_sw1 = akah_sw1;
           }
-          else if(agakhan_element.includes("Ground_Water_Quality_5416")){
+          else if(agakhan_element.includes("CGWB_Water_Quality_Wells")){
             akah_gwq = akah_Tool.map.getLayer(agakhan_element);
             window.akah_gwq = akah_gwq;
           }
-          else if(agakhan_element.includes("AKAH_Industries_2219")){
-            akah_indus = akah_Tool.map.getLayer(agakhan_element);
-            window.akah_indus = akah_indus;
-          }
-          // else if(agakhan_element.includes("Drainage_Patterns_599")){
-          //   akah_drain = akah_Tool.map.getLayer(agakhan_element);
-          //   window.akah_drain = akah_drain;
+          // else if(agakhan_element.includes("AKAH_Industries_2219")){
+          //   akah_indus = akah_Tool.map.getLayer(agakhan_element);
+          //   window.akah_indus = akah_indus;
           // }
+          else if(agakhan_element.includes("Drainage_Patterns")){
+            akah_drain = akah_Tool.map.getLayer(agakhan_element);
+            window.akah_drain = akah_drain;
+          }
           else if(agakhan_element.includes("Aquaduct_for_AKAH_1326")){
             window.futureScenario_layer = akah_Tool.map.getLayer(agakhan_element);
             //akah_drain = akah_drain;
@@ -327,28 +327,30 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
             window.baselineannual_layer = akah_Tool.map.getLayer(agakhan_element);
             //akah_drain = akah_drain;
           }
-          else if(agakhan_element.includes("akah_hydrogeology_2931")){
+          else if(agakhan_element.includes("Hydrogeology")){
             window.hydrogeology_layer = akah_Tool.map.getLayer(agakhan_element);
           }
           //layers for keymaps of the report
-          else if(agakhan_element.includes("districts_keymaps")){
+          else if(agakhan_element.includes("Districts_Boundaries")){
             window.district_keymap_layer = akah_Tool.map.getLayer(agakhan_element);
           }
-          else if(agakhan_element.includes("blocks_keymaps")){
-            window.block_keymap_layer = akah_Tool.map.getLayer(agakhan_element);
-          }
-          else if (agakhan_element.includes("Sensors_Locations")) {
+          // else if(agakhan_element.includes("Blocks_Boundaries")){
+          //   window.block_keymap_layer = akah_Tool.map.getLayer(agakhan_element);
+          // }
+          else if (agakhan_element.includes("sensor_locations")) {
             //sensors_location layer to be visible only for required maps (not visible for keymaps) in water governance report.
             window.sensors_location_url = akah_Tool.map.getLayer(agakhan_element);
           }
-          else if(agakhan_element.includes("Rainfall_stations_IMD_9074")){
+          else if(agakhan_element.includes("RF_IMD_Stations")){
             window.rainfallStations_layer = akah_Tool.map.getLayer(agakhan_element);
           }
       });
+      window.block_keymap_layer = new FeatureLayer("https://geomonitor.co.in/server/rest/services/Hosted/blocks_keymaps/FeatureServer/0");
 
-      window.akah_total_villages  = this.map._layers["Vilages_study_area_9502"];
-      window.akah_drain  = this.map._layers["Drainage_Patterns_8292"];
-      window.akah_swb  = this.map._layers["Surface_water_quality_19_20_21_3569"];
+
+      window.akah_total_villages  = this.map._layers["Villages_Study_Area_684"];
+      window.akah_drain  = this.map._layers["Drainage_Patterns_2223"];
+      window.akah_swb  = this.map._layers["Surface_Water_Quality_19_20_21_2522"];
       // //defining well experimental layers(primary, water levels, water quality)
 
       // window.akah_village_url='https://geomonitor.co.in/server/rest/services/Hosted/akah_vilagesnew_13062021/FeatureServer/0';
@@ -609,7 +611,7 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
 
     setMouseEventsIcon: function(){
       cursorPath = akah_Tool.folderUrl+"/css/images/Cursor_1.png";
-          document.getElementsByClassName("map")[0].lastElementChild.innerHTML = document.getElementsByClassName("map")[0].lastElementChild.innerHTML + "<div style='position:absolute;top:305px;left: 7px;'><button id='cursorpathImage' class='cursorpathImageClass' style='font-size:20px;padding:0px;background-color: #555;border-radius: 5px;padding:0px;height:32px;width:32px;border: 1px solid #999;' onclick='onMouseEventBtnClick()'><img src='"+cursorPath+"' title='Info Viewer' style='height: 27px;width: 27px;padding: 4px 3px 4px 5px;'></button></div>"
+          document.getElementsByClassName("map")[0].lastElementChild.innerHTML = document.getElementsByClassName("map")[0].lastElementChild.innerHTML + "<div style='position:absolute;top:285px;left: 7px;'><button id='cursorpathImage' class='cursorpathImageClass' style='font-size:20px;padding:0px;background-color: #555;border-radius: 5px;padding:0px;height:32px;width:32px;border: 1px solid #999;' onclick='onMouseEventBtnClick()'><img src='"+cursorPath+"' title='Info Viewer' style='height: 27px;width: 27px;padding: 4px 3px 4px 5px;'></button></div>"
           var mouseEvent=false;window.mouseEvent=mouseEvent;
           onMouseEventBtnClick = function(){
             if(mouseEvent == false){
@@ -5140,7 +5142,7 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
         // window.highlightVillGraphic = highlightVillGraphic;
 
         this.own(on(vill_valakah, 'change', lang.hitch(this, function (evt) {
-          
+          dojo.query("#arrowGoBtn").style("display","none");
           window.akahvillage = evt;          
           //statement to display the village related information only when a village is chosen.
           dojo.query('#village_level_info').style('display', 'none');
@@ -5216,6 +5218,9 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
                               window.villageMap_1 = village_keyevt.url;
                               document.getElementById('go_toVillage').disabled = false;
                               dojo.query("#pr_go_load").style("display","none");
+                              dojo.query("#arrowGoBtn").style("display","block");
+                              dojo.query("#go_toVillage").style("cursor","pointer");
+                              domAttr.set("arrowGoBtn","innerHTML","<img src='"+rightarrow_img+"' style='height: 25px;margin-right: 8px;' id='arrowblink' alt='rightarrow'>")
                             },akah_Tool.log_query_errors);
                             // setTimeout(function(){
                             //   },3000)
@@ -5288,6 +5293,8 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
     },
 
     showAKAHResult: function(){
+      dojo.query("#arrowGoBtn").style("display","none");
+      // dom.setAttr("arrowGoBtn","innerHTML","<img src='"+rightarrow_img+"' style='height: 25px;margin-right: 8px;' id='arrowblink' alt='rightarrow'>")
           init_map = this.map
           akah_Tool = this;
 
@@ -5453,12 +5460,12 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
               });
               // for Block level CGWB Water Level vs Rainfall graphs in reports ends here
 
-              akah_indus.setVisibility(false);
+            //   akah_indus.setVisibility(false);
               akah_sw1.setVisibility(true);
               akah_drain.setVisibility(true);
               akah_states_layer.setVisibility(false);
               gwm_station_layer.setVisibility(false)
-              akah_selectedwells_layer.setVisibility(false);
+              akah_selectedwells_layer.setVisibility(true);
               akah_dist_layer.setVisibility(false);
 
               window.rv={};
@@ -9335,7 +9342,7 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
         window.advisoryResp = res;
         
         akah_villages_layer.setVisibility(false);
-        akah_Tool.map._layers.Vilages_study_area_9502.setVisibility(false)
+        akah_Tool.map._layers.Villages_Study_Area_684.setVisibility(false)
         //visibility disabled for all keymaps.
         akah_drain.setVisibility(true);
         sensors_location_url.setVisibility(false);
@@ -9413,7 +9420,7 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
     },
 
     gotoBlockExtent: function(){
-        akah_block_layer.setVisibility(false);
+        akah_block_layer.setVisibility(true);
         district_keymap_layer.setVisibility(false);
         akah_villages_layer.setVisibility(false);
         akah_selectedwells_layer.setVisibility(true);
@@ -9421,8 +9428,8 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
         sensors_location_url.setVisibility(true);
 
         akah_Tool.map.graphics.remove(block_graphic)
-        akah_Tool.map._layers.Vilages_study_area_9502.setVisibleLayers([0]);
-        akah_Tool.map._layers.Vilages_study_area_9502.setVisibility(true)
+        akah_Tool.map._layers.Villages_Study_Area_684.setVisibleLayers([0]);
+        akah_Tool.map._layers.Villages_Study_Area_684.setVisibility(true)
         // akah_Tool.map.getLayer(akah_Tool.map.graphicsLayerIds[37]).setVisibility(true)
         gwm_station_layer.setDefinitionExpression("state like" +" "+"\'"+ akahstate +"\'"  + " " + "AND" + " " + "district like" +" "+"\'"+ akahdistrict +"\'"+ " " + "AND" + " " + "block like" + " " + "\'" + akahblock + "\'" + " AND may_2018 is not null AND may_2015 is not null AND may_2016 is not null AND may_2017 is not null AND nov_2015 is not null AND nov_2016 is not null AND nov_2017 is not null AND nov_2018 is not null AND nov_2019 is not null AND may_2019 is not null");
         gwm_station_layer.setVisibility(true)
@@ -9441,7 +9448,7 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
           //print task
           var mainBlock_PrintTask = new PrintTask(app.printUrl);
           window.mainBlock_PrintTask = mainBlock_PrintTask;
-          akah_Tool.map._layers["Vilages_study_area_9502"].setLayerDefinitions(["Block like '"+akahblock+"'"])
+          akah_Tool.map._layers["Villages_Study_Area_684"].setLayerDefinitions(["Block like '"+akahblock+"'"])
 
           window.printing_tool_exe_blockmap = mainBlock_PrintTask.execute(block_mainMapParams, function (evt){
               window.printresvill=evt.url;
@@ -9455,7 +9462,7 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
 
     gotoWatershedExtent: function(){
       rainfallStations_layer.setVisibility(false);
-      akah_Tool.map._layers.Vilages_study_area_9502.setVisibility(false)
+      akah_Tool.map._layers.Villages_Study_Area_684.setVisibility(false)
       block_keymap_layer.setDefinitionExpression("district like '"+akahdistrict+"'")
       district_keymap_layer.setVisibility(false);
       // akah_watershed.setDefinitionExpression("district like '"+akahdistrict+"'");
@@ -9621,8 +9628,8 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
             "<img src='"+rightarrow_img+"' style='height: 40px;transform: rotate(90deg);margin-top: 15px;margin-left:67%;' alt='rightarrow'>"+
 
             // '<div style="display:inline-flex;text-align:center"><div><span style="padding-left: 25%;font-size: 18px;display:none;">Village Boundaries</span><img src="'+villageMap_1+'" style="width: 85%;" alt="district_map"></div>'+
-            '<div><span style="text-align:center;font-weight:bold;font-size: 18px;display:block;padding-bottom: 10px;">'+akahvillage+' Village in '+akahblock+'</span><img src="'+villageMap_1+'" style="width: 40%;padding-left: 29%;" alt="village_map"></div>'+
-            '<div style="margin-top:20px;padding-left: 145px;"><span style="padding-left: 14%;font-weight:bold;font-size: 18px;">Wells in '+akahblock+' Block</span><img src="'+printresvill+'" style="width: 400px;" alt="block_map"></div>'+
+            '<div><span style="text-align:center;font-weight:bold;font-size: 18px;display:block;padding-bottom: 10px;">'+akahvillage+' Village in '+akahblock+'</span><img src="'+villageMap_1+'" style="width: 45%;padding-left: 29%;" alt="village_map"></div>'+
+            '<div style="margin-top:20px;padding-left: 236px;"><span style="padding-left: 14%;font-weight:bold;font-size: 18px;">Wells in '+akahblock+' Block</span><img src="'+printresvill+'" style="width: 451px;" alt="block_map"></div>'+
             "<p style='color: #717070;margin-bottom: 5px;'>*Note: The drainage system follows a top-down approach where rivers of the first order are indicated by '1' and consequently the others follow up.</p>"+
             "<div style='color: #717070;margin-bottom: 5px;display:flex;'><div>*Note:</div><div style='width: 3%;height: 12px;border: 2px solid red;'></div><div style='padding-left: 1%;'>The boundary map is of the selected village.</div>",
            addPageBreak:true
@@ -10851,12 +10858,12 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
 
 
       akah_selectedwells_layer.setVisibility(true);
-      akah_main_layer.setVisibility(true);
+      akah_main_layer.setVisibility(false);
       akah_states_layer.setVisibility(true);
       akah_dist_layer.setVisibility(true);
       akah_block_layer.setVisibility(true);
       akah_villages_layer.setVisibility(false);
-      akah_Tool.map._layers["Vilages_study_area_9502"].setLayerDefinitions(["1=1"])
+      akah_Tool.map._layers["Villages_Study_Area_684"].setLayerDefinitions(["1=1"])
       akah_total_villages.setVisibility(false);
 
       akah_Tool.map.graphics.clear()
@@ -11063,16 +11070,16 @@ function(declare,executeAll, map, arcgisPortal,Print, PrintTemplate, esriConfig,
       "<span style='padding-left:5px;'>Water Change<b>"+"</b></span></div>");
 
 
-      viz_layer_list.forEach(function(visualize_element){
-          if(visualize_element.includes("GWM_Stations")){
+       viz_layer_list.forEach(function(visualize_element){
+          if(visualize_element.includes("CGWB_Water_Level_Wells")){
             gwm_station_layer = akah_Tool.map.getLayer(visualize_element);
             window.gwm_station_layer = gwm_station_layer;
           }
-          else if(visualize_element.includes("AKAH_Selected_wells")){
+          else if(visualize_element.includes("selected_wells_primary")){
             akah_selectedwells_layer = akah_Tool.map.getLayer(visualize_element);
             window.akah_selectedwells_layer = akah_selectedwells_layer;
           }
-          else if(visualize_element.includes("states")){
+          else if(visualize_element.includes("State_Boundaries")){
             akah_states_layer = akah_Tool.map.getLayer(visualize_element);
             window.akah_states_layer = akah_states_layer;
           }

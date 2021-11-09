@@ -204,21 +204,21 @@ function(declare, on, lang, Deferred, dom, domAttr, domStyle, domConstruct, Sele
         }else{closeDialog();}
       });
       // sensors_location_url -> layer name assigned to sensor locations layer on the map.
-      sensors_location_url.on('mouse-over', function(evt){
-        if(mouseEvent == true){
-        akah_Tool.map.graphics.clear();
-        dojo.query(".esriPopup").style("display","none")
-        var t = "<div style='display:flex;width:100%;justify-content: space-between;'><h3 style='color:#2aaa8a;font-size: 15px;font-family: serif;width:80%;margin-top:0px;'>Sensor Information</h3><button style='float:right;padding: 1px 5px 2px 6px;border-radius: 5px;background-color: #ffffff;border-color: #74efcd;height:27px;' onclick='closeDialog()'>&#9747;</button></div><hr>"
-          + "<div style='line-height:1.5em;'>"
-          + "<b>Site Name: </b>${site_name}<br>"
-          + "<b>Well Owner: </b>${well_owner_name}<br>"
-          + "<b>Water Usage: </b>${water_usage}<br>"
-          + "<b>Motor Capacity(hp): </b>${motor_capacity_hp}<br>"
-          + "<b>Well Depth(m): </b>${depth_m}<br>"
-          + "<b>Outlet pie size(inch): </b>${outlet_pipe_size_inch}<br></div>"
-          addGraphic(evt,t);
-        }else{closeDialog();}
-      });
+      // sensors_location_url.on('mouse-over', function(evt){
+      //   if(mouseEvent == true){
+      //   akah_Tool.map.graphics.clear();
+      //   dojo.query(".esriPopup").style("display","none")
+      //   var t = "<div style='display:flex;width:100%;justify-content: space-between;'><h3 style='color:#2aaa8a;font-size: 15px;font-family: serif;width:80%;margin-top:0px;'>Sensor Information</h3><button style='float:right;padding: 1px 5px 2px 6px;border-radius: 5px;background-color: #ffffff;border-color: #74efcd;height:27px;' onclick='closeDialog()'>&#9747;</button></div><hr>"
+      //     + "<div style='line-height:1.5em;'>"
+      //     + "<b>Site Name: </b>${site_name}<br>"
+      //     + "<b>Well Owner: </b>${well_owner_name}<br>"
+      //     + "<b>Water Usage: </b>${water_usage}<br>"
+      //     + "<b>Motor Capacity(hp): </b>${motor_capacity_hp}<br>"
+      //     + "<b>Well Depth(m): </b>${depth_m}<br>"
+      //     + "<b>Outlet pie size(inch): </b>${outlet_pipe_size_inch}<br></div>"
+      //     addGraphic(evt,t);
+      //   }else{closeDialog();}
+      // });
     };
     addGraphic  = function(evt, t){
       var content = esriLang.substitute(evt.graphic.attributes,t);
